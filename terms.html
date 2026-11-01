@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Terms of Use · Famora</title>
+  <meta name="description" content="Terms for using the Famora family tree app.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --canvas: #FBF6EF;
+      --surface: #fff;
+      --ink: #2B201A;
+      --muted: #786A5F;
+      --faint: #B3A597;
+      --line: #EDE3D8;
+      --terracotta: #C65A32;
+      --terracotta-soft: #FBE4D7;
+      --forest: #2F5B4C;
+      --shadow: 0 18px 40px rgba(90, 58, 38, 0.08);
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; background: var(--canvas); color: var(--ink); }
+    body { font-family: "Plus Jakarta Sans", sans-serif; line-height: 1.65; font-size: 17px; }
+    a { color: var(--terracotta); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+    header {
+      position: sticky; top: 0; z-index: 10;
+      background: rgba(251, 246, 239, 0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--line);
+    }
+    .bar, .wrap { width: min(820px, calc(100% - 40px)); margin: 0 auto; }
+    .bar { display: flex; align-items: center; justify-content: space-between; min-height: 72px; gap: 16px; }
+    .brand { display: flex; align-items: center; gap: 12px; color: inherit; text-decoration: none; }
+    .mark { width: 40px; height: 40px; border-radius: 13px; background: linear-gradient(135deg, #C65A32, #D98530); box-shadow: 0 8px 16px rgba(198, 90, 50, 0.28); }
+    .word { font-family: Fraunces, serif; font-weight: 700; font-size: 22px; letter-spacing: -0.4px; }
+    nav { display: flex; gap: 18px; flex-wrap: wrap; }
+    nav a { color: var(--muted); text-decoration: none; font-weight: 600; font-size: 14px; }
+    nav a[aria-current="page"] { color: var(--terracotta); }
+    .hero { padding: 56px 0 28px; background: radial-gradient(circle at 50% -10%, var(--terracotta-soft), transparent 58%); }
+    h1, h2, h3 { font-family: Fraunces, serif; letter-spacing: -0.4px; line-height: 1.2; }
+    h1 { font-size: clamp(36px, 6vw, 52px); margin: 0 0 10px; }
+    .lede { color: var(--muted); font-size: 18px; max-width: 58ch; }
+    .meta { display: flex; gap: 18px; flex-wrap: wrap; color: var(--faint); font-size: 13px; font-weight: 600; margin-top: 18px; }
+    article { padding: 12px 0 80px; }
+    article h2 { font-size: 28px; margin: 40px 0 12px; }
+    article h3 { font-size: 20px; margin: 28px 0 8px; }
+    p, li { color: #3d312a; }
+    ul { padding-left: 1.2em; }
+    li { margin: 6px 0; }
+    .card {
+      background: var(--surface); border-radius: 24px; padding: 22px 24px;
+      box-shadow: var(--shadow); border: 1px solid rgba(237, 227, 216, 0.8);
+    }
+    .toc { display: grid; gap: 8px; margin: 28px 0 8px; }
+    .toc a { color: var(--forest); font-weight: 600; text-decoration: none; }
+    footer { border-top: 1px solid var(--line); padding: 28px 0 40px; color: var(--muted); font-size: 14px; }
+    footer .wrap { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="bar">
+      <a class="brand" href="privacy.html">
+        <svg class="mark" viewBox="0 0 92 92" aria-hidden="true">
+          <rect width="92" height="92" rx="29" fill="url(#g)"/>
+          <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#C65A32"/><stop offset="1" stop-color="#D98530"/></linearGradient></defs>
+          <path d="M46 74V52Q46 42 28 39M46 52Q46 42 64 39M46 52V31" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round"/>
+          <circle cx="28" cy="39" r="9" fill="#fff" fill-opacity=".55"/>
+          <circle cx="64" cy="39" r="9" fill="#fff" fill-opacity=".55"/>
+          <circle cx="46" cy="26" r="11" fill="#fff"/>
+        </svg>
+        <span class="word">Famora</span>
+      </a>
+      <nav>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html" aria-current="page">Terms</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <div class="hero">
+    <div class="wrap">
+      <h1>Terms of Use</h1>
+      <p class="lede">These terms govern your use of Famora. By creating an account or joining a family, you agree to them.</p>
+      <div class="meta">
+        <span>Published 1 November 2026</span>
+        <span>Effective 1 November 2026</span>
+        <span>© 2026 devook</span>
+      </div>
+    </div>
+  </div>
+  <article class="wrap">
+    <div class="card toc">
+      <strong>On this page</strong>
+      <a href="#accept">Agreement</a>
+      <a href="#service">The service</a>
+      <a href="#account">Accounts</a>
+      <a href="#family">Families and roles</a>
+      <a href="#content">Your content</a>
+      <a href="#rules">Acceptable use</a>
+      <a href="#safety">Location and safety tools</a>
+      <a href="#ip">Famora’s rights</a>
+      <a href="#end">Suspension and deletion</a>
+      <a href="#legal">Disclaimers and law</a>
+    </div>
+    <h2 id="accept">1. Agreement</h2>
+    <p>These Terms of Use (“Terms”) are a contract between you and <strong>devook</strong> for the Famora mobile apps on iOS and Android. They work together with our <a href="privacy.html">Privacy Policy</a>. If you do not agree, do not use Famora.</p>
+    <p>You must be <strong>18 or older</strong> to create an account. If you add information about a child or another person, you confirm you have the right to do so.</p>
+    <h2 id="service">2. The service</h2>
+    <p>Famora is a living family tree plus tools a family uses together, including:</p>
+    <ul>
+      <li>A graph-based tree (multiple marriages, adoptions, step relations, unknown people)</li>
+      <li>Profiles, People directory, and “how we are related”</li>
+      <li>Family chat, memories, calendar and organizer, live map, wishes, invitations, and polls</li>
+      <li>Optional safety tools such as location share, check-in, and SOS</li>
+    </ul>
+    <p>Features may change. Something marked as coming later is not part of the current service. Voice or video calling, if shown, is provided through a specialist calling provider and is not a substitute for emergency services.</p>
+    <p>Famora needs a network connection and a supported phone. SMS codes may incur carrier charges.</p>
+    <h2 id="account">3. Accounts</h2>
+    <ul>
+      <li>Phone one-time codes are the primary way to sign in. Email/password and Google are also available</li>
+      <li>Keep your device and codes to yourself. You are responsible for activity on your account</li>
+      <li>Give a real name you are happy for family to see. Do not impersonate someone else</li>
+      <li>One signed-in user links to at most one Person in each family</li>
+      <li>We may refuse or reclaim an account that is abusive, automated, or created with a false identity</li>
+    </ul>
+    <h2 id="family">4. Families and roles</h2>
+    <p>A family has an owner, optional admins, and members.</p>
+    <ul>
+      <li>The owner created the family (or later received ownership) and can rename it, manage members, export, or delete it</li>
+      <li>Admins can approve join requests and relationship changes, and adjust family privacy defaults</li>
+      <li>Members can add relatives and content according to permissions. Relationship changes they make stay pending until an admin approves</li>
+      <li>A person who joins by creating themselves stays off the tree until an admin approves <em>and</em> connects them to someone already on the tree</li>
+      <li>Removing a member unlinks their account. The Person node stays unless an admin deletes that person</li>
+    </ul>
+    <p>Invite codes and QR links let people preview a family name and join. Share codes only with people you trust. Anyone with a live code can request to join.</p>
+    <h2 id="content">5. Your content</h2>
+    <p>You keep the rights to photos, stories, messages, and other material you add. You grant devook a limited licence to store, display, and transmit that content so Famora can work for your family (including thumbnails, notifications, and backups).</p>
+    <p>You promise that you have the right to upload what you add, and that it does not violate the law or someone else’s privacy. Family history is often sensitive. Do not publish another adult’s private contact or documents as “family” visible if they would not expect that.</p>
+    <p>Export gives you a JSON file of what you are allowed to see. It is not a GEDCOM file and is not a complete public archive of other members’ private groups.</p>
+    <h2 id="rules">6. Acceptable use</h2>
+    <p>Do not:</p>
+    <ul>
+      <li>Harass, threaten, or publish intimate images of anyone</li>
+      <li>Use Famora to stalk, or to share someone’s location without their control (location can only be shared by the person on that device)</li>
+      <li>Upload illegal content, malware, or spam</li>
+      <li>Try to access another family’s data, bypass approvals, or probe the service</li>
+      <li>Scrape, resell, or build a competing dataset from Famora content</li>
+      <li>Misuse invite codes, SOS, or notifications to alarm people without a genuine need</li>
+    </ul>
+    <p>We may remove content or members that break these rules.</p>
+    <h2 id="safety">7. Location and safety tools</h2>
+    <p>Live map, journey share, check-in, and SOS are optional. They are not emergency-dispatch services. If you or someone else is in danger, contact local emergency numbers first.</p>
+    <p>The person who shares location or sends SOS can stop or cancel without anyone else’s approval. Do not pressure family members to leave share on.</p>
+    <h2 id="ip">8. Famora’s rights</h2>
+    <p>The Famora name, wordmark, tree mark, design, and software are owned by <strong>devook</strong> or our licensors. You may not copy the app, reverse engineer it except where the law allows, or use our marks to imply we endorse another product.</p>
+    <h2 id="end">9. Suspension and deletion</h2>
+    <p>You may leave a family or delete your account in Settings. Deleting your account unlinks you and removes families you own alone; families with other members are left in place. An owner may delete a family for everyone. Those actions are permanent.</p>
+    <p>We may suspend or close an account that violates these Terms, creates risk for others, or is required by law. We will try to explain why, unless that would cause harm or is legally forbidden.</p>
+    <h2 id="legal">10. Disclaimers and law</h2>
+    <p>Famora is provided “as is”. Family data is entered by members; we do not guarantee that a tree is complete or accurate. We are not liable for decisions you make from relationship answers, calendars, or map pins, or for outages of SMS, maps, or notification networks.</p>
+    <p>To the fullest extent allowed by law, devook’s total liability for a claim about Famora is limited to the amount you paid us for the app in the 12 months before the claim (often zero, if the app is free).</p>
+    <p>These Terms are governed by the laws of <strong>India</strong>, without regard to conflict-of-law rules. Courts in India have exclusive jurisdiction, except where consumer law in your country says you may sue locally.</p>
+    <p>We may update these Terms. The publish date at the top will change. If you continue to use Famora after an update, you accept the new Terms. If a court strikes out one clause, the rest still apply.</p>
+    <p>Questions: <a href="mailto:devhookdeveloper@gmail.com">devhookdeveloper@gmail.com</a> · <a href="contact.html">Contact page</a>.</p>
+  </article>
+  <footer>
+    <div class="wrap">
+      <span>© 2026 devook. All rights reserved.</span>
+      <span>Published 1 November 2026 · Famora</span>
+    </div>
+  </footer>
+</body>
+</html>
