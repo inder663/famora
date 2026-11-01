@@ -1,1 +1,149 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact · Famora</title>
+  <meta name="description" content="Contact devook about Famora — privacy, support, and family data requests.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --canvas: #FBF6EF;
+      --surface: #fff;
+      --ink: #2B201A;
+      --muted: #786A5F;
+      --faint: #B3A597;
+      --line: #EDE3D8;
+      --terracotta: #C65A32;
+      --terracotta-soft: #FBE4D7;
+      --forest: #2F5B4C;
+      --shadow: 0 18px 40px rgba(90, 58, 38, 0.08);
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; background: var(--canvas); color: var(--ink); }
+    body { font-family: "Plus Jakarta Sans", sans-serif; line-height: 1.65; font-size: 17px; }
+    a { color: var(--terracotta); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+    header {
+      position: sticky; top: 0; z-index: 10;
+      background: rgba(251, 246, 239, 0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--line);
+    }
+    .bar, .wrap { width: min(820px, calc(100% - 40px)); margin: 0 auto; }
+    .bar { display: flex; align-items: center; justify-content: space-between; min-height: 72px; gap: 16px; }
+    .brand { display: flex; align-items: center; gap: 12px; color: inherit; text-decoration: none; }
+    .mark { width: 40px; height: 40px; border-radius: 13px; background: linear-gradient(135deg, #C65A32, #D98530); box-shadow: 0 8px 16px rgba(198, 90, 50, 0.28); }
+    .word { font-family: Fraunces, serif; font-weight: 700; font-size: 22px; letter-spacing: -0.4px; }
+    nav { display: flex; gap: 18px; flex-wrap: wrap; }
+    nav a { color: var(--muted); text-decoration: none; font-weight: 600; font-size: 14px; }
+    nav a[aria-current="page"] { color: var(--terracotta); }
+    .hero { padding: 56px 0 12px; background: radial-gradient(circle at 50% -10%, var(--terracotta-soft), transparent 58%); }
+    h1, h2 { font-family: Fraunces, serif; letter-spacing: -0.4px; line-height: 1.2; }
+    h1 { font-size: clamp(36px, 6vw, 52px); margin: 0 0 10px; }
+    .lede { color: var(--muted); font-size: 18px; max-width: 58ch; }
+    .meta { display: flex; gap: 18px; flex-wrap: wrap; color: var(--faint); font-size: 13px; font-weight: 600; margin-top: 18px; }
+    .grid { display: grid; gap: 18px; padding: 28px 0 80px; }
+    @media (min-width: 720px) { .grid { grid-template-columns: 1.1fr 0.9fr; align-items: start; } }
+    .card {
+      background: var(--surface); border-radius: 24px; padding: 26px 26px 28px;
+      box-shadow: var(--shadow); border: 1px solid rgba(237, 227, 216, 0.8);
+    }
+    .card h2 { font-size: 26px; margin: 0 0 10px; }
+    .mail {
+      display: inline-flex; align-items: center; gap: 10px;
+      margin: 14px 0 6px; padding: 14px 16px; border-radius: 16px;
+      background: var(--terracotta-soft); color: var(--ink); text-decoration: none; font-weight: 700;
+    }
+    label { display: block; font-weight: 600; font-size: 14px; margin: 14px 0 6px; }
+    input, textarea, select {
+      width: 100%; border: 1.2px solid var(--line); border-radius: 14px;
+      padding: 14px 16px; font: inherit; background: #fffaf5; color: var(--ink);
+    }
+    textarea { min-height: 140px; resize: vertical; }
+    button {
+      margin-top: 18px; width: 100%; border: 0; border-radius: 16px;
+      padding: 16px; font: inherit; font-weight: 800; color: #fff;
+      background: linear-gradient(135deg, #C65A32, #D98530);
+      box-shadow: 0 10px 22px rgba(198, 90, 50, 0.28); cursor: pointer;
+    }
+    .fine { color: var(--muted); font-size: 14px; }
+    footer { border-top: 1px solid var(--line); padding: 28px 0 40px; color: var(--muted); font-size: 14px; }
+    footer .wrap { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="bar">
+      <a class="brand" href="privacy.html">
+        <svg class="mark" viewBox="0 0 92 92" aria-hidden="true">
+          <rect width="92" height="92" rx="29" fill="url(#g)"/>
+          <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#C65A32"/><stop offset="1" stop-color="#D98530"/></linearGradient></defs>
+          <path d="M46 74V52Q46 42 28 39M46 52Q46 42 64 39M46 52V31" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round"/>
+          <circle cx="28" cy="39" r="9" fill="#fff" fill-opacity=".55"/>
+          <circle cx="64" cy="39" r="9" fill="#fff" fill-opacity=".55"/>
+          <circle cx="46" cy="26" r="11" fill="#fff"/>
+        </svg>
+        <span class="word">Famora</span>
+      </a>
+      <nav>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <div class="hero">
+    <div class="wrap">
+      <h1>Contact us</h1>
+      <p class="lede">Write to the Famora team at devook. We read every note about the app, your family data, or these pages.</p>
+      <div class="meta">
+        <span>Published 1 November 2026</span>
+        <span>© 2026 devook</span>
+      </div>
+    </div>
+  </div>
+  <div class="wrap grid">
+    <section class="card">
+      <h2>Send a message</h2>
+      <p class="fine">This form opens your email app. Nothing is stored on this page.</p>
+      <form action="mailto:devhookdeveloper@gmail.com" method="get" enctype="text/plain">
+        <input type="hidden" name="subject" id="subject" value="Famora: Support">
+        <label for="topic">Topic</label>
+        <select id="topic" onchange="document.getElementById('subject').value = 'Famora: ' + this.value">
+          <option>Support</option>
+          <option>Privacy or data request</option>
+          <option>Account or delete help</option>
+          <option>Family invite or approvals</option>
+          <option>Something broken</option>
+          <option>Other</option>
+        </select>
+        <label for="body">Message</label>
+        <textarea id="body" name="body" required placeholder="Tell us what happened, the email or phone on the account, and the family name if it helps."></textarea>
+        <button type="submit">Email devook</button>
+      </form>
+    </section>
+    <aside class="card">
+      <h2>Direct email</h2>
+      <p>For privacy requests, account deletion help, or press, use the same inbox.</p>
+      <a class="mail" href="mailto:devhookdeveloper@gmail.com">devhookdeveloper@gmail.com</a>
+      <p class="fine">We aim to reply within a few working days. If you are in immediate danger, contact local emergency services — Famora SOS notifies your family; it does not call the police.</p>
+      <h2 style="margin-top:28px">Please include</h2>
+      <ul class="fine">
+        <li>The sign-in method (phone, email, or Google)</li>
+        <li>A description of the screen or family, not passwords or OTP codes</li>
+        <li>Whether you want data exported, corrected, or erased</li>
+      </ul>
+      <p class="fine"><a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Use</a></p>
+    </aside>
+  </div>
+  <footer>
+    <div class="wrap">
+      <span>© 2026 devook. All rights reserved.</span>
+      <span>Published 1 November 2026 · Famora</span>
+    </div>
+  </footer>
+</body>
+</html>
