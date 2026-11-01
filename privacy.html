@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Contact · Famora</title>
-  <meta name="description" content="Contact devook about Famora — privacy, support, and family data requests.">
+  <title>Privacy Policy · Famora</title>
+  <meta name="description" content="How Famora collects, uses, and protects family data.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -23,7 +23,11 @@
     }
     * { box-sizing: border-box; }
     html, body { margin: 0; background: var(--canvas); color: var(--ink); }
-    body { font-family: "Plus Jakarta Sans", sans-serif; line-height: 1.65; font-size: 17px; }
+    body {
+      font-family: "Plus Jakarta Sans", sans-serif;
+      line-height: 1.65;
+      font-size: 17px;
+    }
     a { color: var(--terracotta); text-decoration-thickness: 1px; text-underline-offset: 3px; }
     header {
       position: sticky; top: 0; z-index: 10;
@@ -32,44 +36,44 @@
       border-bottom: 1px solid var(--line);
     }
     .bar, .wrap { width: min(820px, calc(100% - 40px)); margin: 0 auto; }
-    .bar { display: flex; align-items: center; justify-content: space-between; min-height: 72px; gap: 16px; }
+    .bar {
+      display: flex; align-items: center; justify-content: space-between;
+      min-height: 72px; gap: 16px;
+    }
     .brand { display: flex; align-items: center; gap: 12px; color: inherit; text-decoration: none; }
-    .mark { width: 40px; height: 40px; border-radius: 13px; background: linear-gradient(135deg, #C65A32, #D98530); box-shadow: 0 8px 16px rgba(198, 90, 50, 0.28); }
+    .mark {
+      width: 40px; height: 40px; border-radius: 13px;
+      background: linear-gradient(135deg, #C65A32, #D98530);
+      box-shadow: 0 8px 16px rgba(198, 90, 50, 0.28);
+    }
     .word { font-family: Fraunces, serif; font-weight: 700; font-size: 22px; letter-spacing: -0.4px; }
     nav { display: flex; gap: 18px; flex-wrap: wrap; }
     nav a { color: var(--muted); text-decoration: none; font-weight: 600; font-size: 14px; }
     nav a[aria-current="page"] { color: var(--terracotta); }
-    .hero { padding: 56px 0 12px; background: radial-gradient(circle at 50% -10%, var(--terracotta-soft), transparent 58%); }
-    h1, h2 { font-family: Fraunces, serif; letter-spacing: -0.4px; line-height: 1.2; }
+    .hero {
+      padding: 56px 0 28px;
+      background: radial-gradient(circle at 50% -10%, var(--terracotta-soft), transparent 58%);
+    }
+    h1, h2, h3 { font-family: Fraunces, serif; letter-spacing: -0.4px; line-height: 1.2; }
     h1 { font-size: clamp(36px, 6vw, 52px); margin: 0 0 10px; }
     .lede { color: var(--muted); font-size: 18px; max-width: 58ch; }
     .meta { display: flex; gap: 18px; flex-wrap: wrap; color: var(--faint); font-size: 13px; font-weight: 600; margin-top: 18px; }
-    .grid { display: grid; gap: 18px; padding: 28px 0 80px; }
-    @media (min-width: 720px) { .grid { grid-template-columns: 1.1fr 0.9fr; align-items: start; } }
+    article { padding: 12px 0 80px; }
+    article h2 { font-size: 28px; margin: 40px 0 12px; }
+    article h3 { font-size: 20px; margin: 28px 0 8px; }
+    p, li { color: #3d312a; }
+    ul { padding-left: 1.2em; }
+    li { margin: 6px 0; }
     .card {
-      background: var(--surface); border-radius: 24px; padding: 26px 26px 28px;
+      background: var(--surface); border-radius: 24px; padding: 22px 24px;
       box-shadow: var(--shadow); border: 1px solid rgba(237, 227, 216, 0.8);
     }
-    .card h2 { font-size: 26px; margin: 0 0 10px; }
-    .mail {
-      display: inline-flex; align-items: center; gap: 10px;
-      margin: 14px 0 6px; padding: 14px 16px; border-radius: 16px;
-      background: var(--terracotta-soft); color: var(--ink); text-decoration: none; font-weight: 700;
+    .toc { display: grid; gap: 8px; margin: 28px 0 8px; }
+    .toc a { color: var(--forest); font-weight: 600; text-decoration: none; }
+    footer {
+      border-top: 1px solid var(--line); padding: 28px 0 40px;
+      color: var(--muted); font-size: 14px;
     }
-    label { display: block; font-weight: 600; font-size: 14px; margin: 14px 0 6px; }
-    input, textarea, select {
-      width: 100%; border: 1.2px solid var(--line); border-radius: 14px;
-      padding: 14px 16px; font: inherit; background: #fffaf5; color: var(--ink);
-    }
-    textarea { min-height: 140px; resize: vertical; }
-    button {
-      margin-top: 18px; width: 100%; border: 0; border-radius: 16px;
-      padding: 16px; font: inherit; font-weight: 800; color: #fff;
-      background: linear-gradient(135deg, #C65A32, #D98530);
-      box-shadow: 0 10px 22px rgba(198, 90, 50, 0.28); cursor: pointer;
-    }
-    .fine { color: var(--muted); font-size: 14px; }
-    footer { border-top: 1px solid var(--line); padding: 28px 0 40px; color: var(--muted); font-size: 14px; }
     footer .wrap { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
   </style>
 </head>
@@ -88,61 +92,90 @@
         <span class="word">Famora</span>
       </a>
       <nav>
-        <a href="privacy.html">Privacy</a>
+        <a href="privacy.html" aria-current="page">Privacy</a>
         <a href="terms.html">Terms</a>
-        <a href="contact.html" aria-current="page">Contact</a>
+        <a href="contact.html">Contact</a>
       </nav>
     </div>
   </header>
   <div class="hero">
     <div class="wrap">
-      <h1>Contact us</h1>
-      <p class="lede">Write to the Famora team at devook. We read every note about the app, your family data, or these pages.</p>
+      <h1>Privacy Policy</h1>
+      <p class="lede">Famora is a living family tree. This policy explains what we collect, who in your family can see it, and how you can export or delete it.</p>
       <div class="meta">
         <span>Published 1 November 2026</span>
-        <span>© 2026 devook</span>
+        <span>Effective 1 November 2026</span>
+        <span>Applies to the Famora iOS and Android apps</span>
       </div>
     </div>
   </div>
-  <div class="wrap grid">
-    <section class="card">
-      <h2>Send a message</h2>
-      <p class="fine">This form opens your email app. Nothing is stored on this page.</p>
-      <form action="mailto:devhookdeveloper@gmail.com" method="get" enctype="text/plain">
-        <input type="hidden" name="subject" id="subject" value="Famora: Support">
-        <label for="topic">Topic</label>
-        <select id="topic" onchange="document.getElementById('subject').value = 'Famora: ' + this.value">
-          <option>Support</option>
-          <option>Privacy or data request</option>
-          <option>Account or delete help</option>
-          <option>Family invite or approvals</option>
-          <option>Something broken</option>
-          <option>Other</option>
-        </select>
-        <label for="body">Message</label>
-        <textarea id="body" name="body" required placeholder="Tell us what happened, the email or phone on the account, and the family name if it helps."></textarea>
-        <button type="submit">Email devook</button>
-      </form>
-    </section>
-    <aside class="card">
-      <h2>Direct email</h2>
-      <p>For privacy requests, account deletion help, or press, use the same inbox.</p>
-      <a class="mail" href="mailto:devhookdeveloper@gmail.com">devhookdeveloper@gmail.com</a>
-      <p class="fine">We aim to reply within a few working days. If you are in immediate danger, contact local emergency services — Famora SOS notifies your family; it does not call the police.</p>
-      <h2 style="margin-top:28px">Please include</h2>
-      <ul class="fine">
-        <li>The sign-in method (phone, email, or Google)</li>
-        <li>A description of the screen or family, not passwords or OTP codes</li>
-        <li>Whether you want data exported, corrected, or erased</li>
-      </ul>
-      <p class="fine"><a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Use</a></p>
-    </aside>
-  </div>
-  <footer>
-    <div class="wrap">
-      <span>© 2026 devook. All rights reserved.</span>
-      <span>Published 1 November 2026 · Famora</span>
+  <article class="wrap">
+    <div class="card toc">
+      <strong>On this page</strong>
+      <a href="#who">Who we are</a>
+      <a href="#collect">Information we collect</a>
+      <a href="#use">How we use it</a>
+      <a href="#see">Who can see family data</a>
+      <a href="#location">Location, SOS, and maps</a>
+      <a href="#children">Children and relatives you add</a>
+      <a href="#processors">Services that help us run Famora</a>
+      <a href="#keep">How long we keep data</a>
+      <a href="#rights">Your choices</a>
+      <a href="#contact">Contact</a>
     </div>
-  </footer>
-</body>
-</html>
+    <h2 id="who">1. Who we are</h2>
+    <p>Famora (“we”, “us”) is a mobile app published by <strong>devook</strong>. It helps families keep a shared tree, chat, memories, calendar, live map, and safety tools in one place. The app is for iOS and Android only.</p>
+    <p>Questions about this policy: <a href="mailto:devhookdeveloper@gmail.com">devhookdeveloper@gmail.com</a>.</p>
+    <h2 id="collect">2. Information we collect</h2>
+    <h3>Account</h3>
+    <p>To create or sign in to a Famora account we may collect:</p>
+    <ul>
+      <li>Mobile number, when you sign in with a one-time SMS code</li>
+      <li>Email address and password, when you choose email sign-in (we ask you to confirm the inbox)</li>
+      <li>Name you give us, and a profile photo if you add one</li>
+      <li>Google account details if you continue with Google (email and display name provided by Google)</li>
+      <li>On Android, you may pick a number from Google’s Phone Number Hint sheet. We only receive the number you select</li>
+    </ul>
+    <p>We store a unique account id, the families you belong to, and the last time you signed in.</p>
+    <h3>Family tree and people</h3>
+    <p>A <strong>Person</strong> on the tree is not the same as a signed-in <strong>User</strong>. Families add living relatives, people in memory, children, placeholders, and historical people. For a person you may store names, nickname, birth and death dates, hometown, current city, occupation, bio, photos, optional phone and email, social links, emergency contacts, and papers (photos or PDFs). Relationships (parent, partner, child, sibling, adoption, step, foster) are stored as a family graph. “How we are related” is calculated from that graph; we do not store cousin or grandparent as separate types.</p>
+    <h3>Together features</h3>
+    <ul>
+      <li><strong>Chat:</strong> messages, photos, replies, reactions, and pins in family, household, and other group threads</li>
+      <li><strong>Memories:</strong> albums, captions, stories, recorded interviews, recipes, and On This Day dates</li>
+      <li><strong>Calendar:</strong> gatherings and RSVPs, shared lists, notes, trip expenses, and milestones</li>
+      <li><strong>Assistant:</strong> wishes, invitation cards, polls, and answers taken from your approved tree (not a public AI chatbot)</li>
+      <li><strong>Invites:</strong> family invite codes and who used them</li>
+    </ul>
+    <h3>Device and notifications</h3>
+    <p>To send push notifications we store a device notification token. In release builds we may collect crash reports (stack traces and device type, not your family content) so we can fix bugs. We do not sell advertising profiles.</p>
+    <h2 id="use">3. How we use it</h2>
+    <ul>
+      <li>Run your account, family, tree, and the features you turn on</li>
+      <li>Send SMS codes, email confirmation, password reset, and family alerts (chat, gatherings, SOS, wishes, and similar)</li>
+      <li>Show a morning digest of today’s birthdays, anniversaries, gatherings, and On This Day memories</li>
+      <li>Enforce roles (owner, admin, member), approvals, and privacy settings</li>
+      <li>Export a JSON copy of the family data you are allowed to see, when you ask</li>
+      <li>Keep the service secure and debug failures</li>
+    </ul>
+    <p>We do not sell your family data. We do not use it to train a public large language model.</p>
+    <h2 id="see">4. Who can see family data</h2>
+    <p>Visibility is <strong>family</strong> or <strong>private</strong>, set as a family default and overridable on a person. Hidden groups are blocked in our database rules, not only hidden in the interface.</p>
+    <ul>
+      <li><strong>Contact, extra photos, emergency contacts, and papers</strong> default to family (any active member of that family)</li>
+      <li><strong>Location</strong> defaults to private. History is off unless the person who is sharing turns a trail on</li>
+      <li><strong>Private</strong> data is readable by the linked user, family admins, or the person who created an unlinked profile</li>
+    </ul>
+    <p>Someone who joins by creating a new person stays <strong>pending</strong>. They cannot see the tree, People, chat, or anyone else’s details until an owner or admin approves them and connects them to someone already on the tree. Claiming an existing person is immediate because that node already has relationships.</p>
+    <p>You may belong to more than one family (for example natal family and in-laws). Each family has its own tree and visibility.</p>
+    <h2 id="location">5. Location, SOS, and maps</h2>
+    <ul>
+      <li>Live location is off until you share for an hour, until tonight, until you stop, or until you arrive at a saved place</li>
+      <li>You can stop sharing or cancel SOS without anyone else’s approval</li>
+      <li>When you stop, your live pin is deleted. A breadcrumb trail is written only if you turned it on, and it is deleted when you stop</li>
+      <li>Check-in and SOS create a visible pin and may notify the family</li>
+      <li>Map tiles are provided by Google Maps. We send the coordinates needed to show the map and your pin</li>
+    </ul>
+    <p>We do not keep a hidden history of where you have been.</p>
+    <h2 id="children">6. Children and relatives you add</h2>
+    <p>Famora accounts are intended for adults. A family tree will often include children, elders, and people who have no Famora account. If you add information about someone else — especially a child — you are responsible for having the right to do so and for choosing an appropriate visibility. We do not use children’s data for marketing.</p>
